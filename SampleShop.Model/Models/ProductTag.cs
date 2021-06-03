@@ -1,20 +1,20 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace SampleShop.Model.Model
+namespace SampleShop.Model.Models
 {
-    [Table("PostTags")]
-    public class PostTag
+    [Table("ProductTags")]
+    public class ProductTag
     {
         [Key]
-        public int PostID { get; set; }
+        public int ProductID { get; set; }
 
         [Key]
         [Column(TypeName = "varchar")]
         public string TagID { get; set; }
 
-        [ForeignKey("PostID")]
-        public virtual Post Post { get; set; }
+        [ForeignKey("ProductID")]
+        public virtual Product Product { get; set; }
 
         [ForeignKey("TagID")]
         public virtual Tag Tag { get; set; }

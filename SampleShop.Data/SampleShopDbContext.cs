@@ -1,5 +1,5 @@
 ﻿
-using SampleShop.Model.Model;
+using SampleShop.Model.Models;
 using System.Data.Entity;
 
 namespace SampleShop.Data
